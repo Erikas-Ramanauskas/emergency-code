@@ -55,14 +55,9 @@ INSTALLED_APPS = [
     'NGOBlog',
     'ngos',
     'ckeditor',
-<<<<<<< HEAD
-    'profiles',
-    
-=======
->>>>>>> 09155c5bb8b421d00fdb7ff4fcdd597e7ab53de2
 
     # Other
-    'crispy_forms',
+    'crispy_for',
     'storages',
 ]
 

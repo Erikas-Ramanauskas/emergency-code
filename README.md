@@ -1,5 +1,5 @@
 # Emergency Code
-![amiresponsive mockups of SupportNGOs site](./documentation/am-i-responsive.png)</br>
+![amiresponsive mockups of SupportNGOs site](./documentation/read-me-pictures/am-i-responsive.png)</br>
 
 **[Link to the deployed site](https://support-ngo.herokuapp.com/)**
 
@@ -9,18 +9,18 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/JoyZadan/emergency-code?color=yellow&style=for-the-badge)
 
 # Project Overview
-Support NGOs is a platform created during a five day World NGO Day hackathon to help connect people with non-governmental organizations that need support, volunteers, and donations. This project was built using Django, Python, JavaScript and Bootstrap 4, deployed on Heroku and uses Amazon S3 for cloud storage.
+SupportNGOs is a platform created during a five day World NGO Day hackathon to help connect people with non-governmental organizations that need support, volunteers, and donations. This project was built using Django, Python, JavaScript and Bootstrap 4, deployed on Heroku and uses Amazon S3 for cloud storage.
 
-*At SupportNGOs, we believe that every contribution, no matter how small, can make a difference. We give you the power to choose your causes and the NGOs you'd like to support.* - [Vasi Pavaloi, Team Emergency Code](https://code-institute-room.slack.com/archives/D04QGJ3ANQH/p1676809115001019)
+*At SupportNGOs, we believe that every contribution, no matter how small, can make a difference. We give you the power to choose your causes and the NGOs you'd like to support.* - [ Team Emergency Code](https://hackathon.codeinstitute.net/teams/272)
 
 ---
 **Table of Contents**
 * [Project Overview](#project-overview)
 * [User Experience](#user-experience)
-    * [Strategy Plane](#strategy-plane)
     * [Scope Plane](#scope-plane)
     * [Structure Plane](#structure-plane)
     * [Skeleton Plane](#skeleton-plane)
+      * * [Wireframes](#Wireframes)
     * [Surface Plane](#surface-plane)
 * [Agile Methodolody](#agile-methodology)
 * [Features](#features)
@@ -31,20 +31,75 @@ Support NGOs is a platform created during a five day World NGO Day hackathon to 
 * [Acknoledgements](#acknowledgements)
 
 ---
-## Project Overview
-Hand of Empathy is a multi-brand, ecommerce full stack project built using Django, Python, JavaScript and Bootstrap 4. The site is deployed to Heroku, 
-Hand of Empathy is a RealEstate site that links the consumer to the major NGO catergories. Where a user can select the prefered category donate to that prefered charity. 
-
 
 ## User Experience
 
-### Strategy Plane
-
 ### Scope Plane
+### **Feature Planning**
+When planning the SupportNGOs page features and scope, We drew up a Desirability, Importance and Viability analysis of all the possible features to be included in the project, ranking them by order of importance from low (1) to high (5). Features that ranked the highest will be prioritised and should they have been delivered within this release, will then be marked accordingly so. The target users for each ranked feature are also identified.
+
+| # | Feature | Target User | Desirability | Importance | Viability  | Delivered |
+| --- | --- | --- | --- | --- | --- | --- |
+| User Accounts |  |  |  |  |  |  |
+| 1 | User Role Permissions | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 2 | Account Registration | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 3 | User Email Confirmation | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 4 | Password Reset | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 5 | Social Media Registration &amp; Login | Visitors &amp; Shoppers | 5 | 2 | 2 | ❌ |
+| 6 | User Profile Page | Registered Users | 5 | 5 | 5 | ✅ |
+| Navigation |  |  |  |  |  |  |
+| 7 | Top Navigation to include: Logo, search bar, my account (register, login) NGO List and Blog | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 7 | Top Navigation to include: Logo, search bar, my account (View Profile, Edit Profile, Change E-mail, Account Settings) NGO List and Blog | All authenticated users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 8 | Top Navigation Search Bar: To be enabled for NGO List link and Blog link | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| NGO lists |  |  |  |  |  |  |
+| 9 | NGO Main page Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 10 | NGO search | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 11 | NGO entire list | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 12 | NGO list sort-by causes| All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 13 | NGO Detail page to include: Link to NGO website, Donate link, Awarenes link, finding More NGO's  | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| Blog |  |  |  |  |  |  |
+| 14 | Blog for users to share their story | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 15 | Commenting by same and other users | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 16 | Liking each commenting and blog post | All Users <sup>1</sup> | 3 | 5 | 5 | ✅ |
+| Wishlist |  |  |  |  |  |  |
+| 17 | Individual User's follow list - Create list by liking individual NGO and fallowing the news for them | Logged In Users | 4 | 3 | 5 | ❌ |
+| 18 | Policy Pages | All Users <sup>1</sup> | 3 | 4 | 3 | ❌ |
+| Digital Marketing |  |  |  |  |  |  |
+| 19 | Social Media Presence | Visitors | 3 | 3 | 3 | ❌ |
+| Email Marketing |  |  |  |  |  |  |
+| 20 | Email Subscription, Powered by MailChimp | Registered Subscribers | 5 | 5 | 5 | ✅ |
+| Contact Us |  |  |  |  |  |  |
+| 21 | Contact Form | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
+| Other Features |  |  |  |  |  |  |
+| 22 | SEO Friendly URLs - use slugs for URLs vs IDs such as product id, review id, NGO id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
 
 ### Structure Plane
 
-### Skeleton Plane
+### **SKELETON PLANE**
+
+#### **Wireframes**
+The wireframes were created using [Figma](https://www.figma.com/).
+
+* Home Page
+![Home Page Wireframe](./documentation/read-me-pictures/home-page.png)
+
+* NGO list page
+![NGO list page](./documentation/read-me-pictures/NGO-list.png)
+
+* NGO profile page
+![NGO profile page](./documentation/read-me-pictures/NGO-profile.png)
+
+* NGO Blog page
+![NGO Blog page](./documentation/read-me-pictures/NGO-Blog.png)
+
+* Tablet home page Page
+![Tablet home page Page](./documentation/read-me-pictures/Tablet.png)
+
+* Phone home Page
+![Phone home Page](./documentation/read-me-pictures/Phone.png)
+
+
+## Surface Plane
 
 ### Fonts and color
 
@@ -63,8 +118,6 @@ Grey is a neutral color that can represent balance, maturity, and reliability. F
 
 Green is a color that is often associated with nature, health, and sustainability. For NGOs that work in environmental conservation, public health, or sustainable development, green can be a powerful symbol of their mission. Green can also represent growth, renewal, and hope, which can be inspiring to stakeholders who want to see positive change in the world.
 
-
-### Surface Plane
 
 ---
 ## Agile Methodology
